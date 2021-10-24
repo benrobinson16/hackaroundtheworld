@@ -22,7 +22,7 @@ The website has made several assumptions: you have been double vaccinated agains
 
 The project consists of two components: the website and the backend.
 
-The website was built using React.js and ChakraUI. This enabled a fast and responsive interface that was also easy to build. In additional to a clean, modern UI, ChakraUI also provides a highly accessible experience. For the domain name (wherecanitravel.tech), I used Domain.com.
+The website was built using React.js and ChakraUI. This enabled a fast and responsive interface that was also easy to build. For the domain name (wherecanitravel.tech), I used Domain.com.
 
 For the backend, I opted for Google Cloud solutions. The data is hosted in a NoSQL database (Firestore), and can be accessed via a suite of cloud functions. Both of these allowed for very quick iterations and modifications as I did not have to worry about running the actual server. Additionally, the cloud functions kept the code separated nicely into a series of different modules, one for each function.
 
