@@ -117,14 +117,30 @@ function App() {
                     >
                         WhereCanITravel.tech
                     </Heading>
-                    <Box
-                        padding="48px"
-                        backgroundColor="gray.50"
-                        borderRadius="xl"
-                        width="50vw"
+                    <VStack
+                        spacing="2vh"
                     >
-                        <Form onSubmit={handleSubmit} isLoading={isLoading}/>
-                    </Box>
+                        <Center
+                            padding={["8px", "16px", "24px"]}
+                            borderRadius="xl"
+                            backgroundColor="red.100"
+                            width={["95vw", "85vw", "75vw", "50vw"]}
+                        >
+                            <Text
+                                textAlign="center"
+                            >
+                                <b>Wherecanitravel.tech is now out of date. Please do not use it for the latest COVID-19 travel advice.</b>
+                            </Text>
+                        </Center>
+                        <Box
+                            padding="48px"
+                            backgroundColor="gray.50"
+                            borderRadius="xl"
+                            width={["95vw", "85vw", "75vw", "50vw"]}
+                        >
+                            <Form onSubmit={handleSubmit} isLoading={isLoading}/>
+                        </Box>
+                    </VStack>
                     <Collapse in={showMap} animateOpacity>
                         <Map
                             closed={closed}
@@ -140,7 +156,7 @@ function App() {
                             padding="48px"
                             backgroundColor="gray.50"
                             borderRadius="xl"
-                            width="50vw"
+                            width={["95vw", "85vw", "75vw", "50vw"]}
                             ref={cardRef}
                         >
                             <SelectedCountry
@@ -163,7 +179,7 @@ function App() {
                         />
                     </Collapse>
                     <Box
-                        width="50vw"
+                        width={["95vw", "85vw", "75vw", "50vw"]}
                     >
                         <HStack
                             marginBottom="16px"
@@ -187,7 +203,7 @@ function App() {
                             as="i"
                             fontSize="sm"
                             color="gray.500"
-                            width="50vw"
+                            width={["95vw", "85vw", "75vw", "50vw"]}
                             fontDecoration="italic"
                             paddingTop="20vh"
                         >

@@ -77,7 +77,7 @@ export default function Grid(props) {
         <SimpleGrid
             columns={3}
             spacing="16px"
-            width="50vw"
+            width={["95vw", "85vw", "75vw", "50vw"]}
             height="50vh"
             padding="16px"
             overflow="scroll"
